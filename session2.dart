@@ -170,22 +170,34 @@ Ternary operator: a shorthand way of writing simple if-else statements (conditio
   //   start++;
   //   print(start);
   // } while (start < stop);
+  // stop our loop or skip an iteration => break(stops loop) continue(skips an iteration)
 
+  // print("================================================");
+  // while (start < stop) {
+  //   start++;
+  //   if (start == 3) continue;// skip an iteration
+  //   if (start == 7) break;// stop the loop
+  //   print(start);
+  // }
   int start = 0;
   int stop = 10;
   var output = "";
   output = "www";
-  // stop our loop or skip an iteration => break(stops loop) continue(skips an iteration)
 
-  print("================================================");
-  while (start < stop) {
-    start++;
-    if (start == 3) continue;// skip an iteration  
-    if (start == 7) break;// stop the loop 
-    print(start); 
+  // ternary operator -> simple conditionals or logic
+  output = (start == 10) ? "ten" : "$start";
+
+  // if else statement > complex
+  if (start == 10) {
+    output = "ten"; 
+  } else {
+    output = "$start";
   }
 
+
+  
+
   print("================================================");
-  // print(output);
+  print(output);
   print("================================================");
 }
