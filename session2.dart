@@ -52,39 +52,91 @@ void main() {
   // print("LOGICAL OR COMPARISON: ${a>b || x<y}");
   // print("LOGICAL NOT COMPARISON: ${ !(a>b) }");
 
-  int a = 10; //declaration ... intialization
-  // minus sign : -
-  int b = 11;
-  int x = 100;
-  int y = 200;
+  // int a = 10; //declaration ... intialization
+  // // minus sign : -
+  // int b = 11;
+  // int x = 100;
+  // int y = 200;
 
-  // Assignment operators: used to assign values to variables (=, +=, -=, *=, /=, %=)
+  // // Assignment operators: used to assign values to variables (=, +=, -=, *=, /=, %=)
 
-  a = 10 + a;
-  a += 10;
-  // addition
-  a = a + 1;
-  a += 1;
-  a++; // post increment
-  ++a; // pre increment
+  // a = 10 + a;
+  // a += 10;
+  // // addition
+  // a = a + 1;
+  // a += 1;
+  // a++; // post increment
+  // ++a; // pre increment
 
-  // subtraction
-  a = a - 1;
-  a -= 1;
-  a--; // post decrement
-  --a; // pre decrement
+  // // subtraction
+  // a = a - 1;
+  // a -= 1;
+  // a--; // post decrement
+  // --a; // pre decrement
 
-  var output = "";
-  // scenario 1 : normal if statement
-  a = 11;
-  if (a < 10) {
-    output = "less than 10";
-  } else {
-    output = "greater than 10";
-  }
+  // var output = "";
+  // // scenario 1 : normal if statement
+  // a = 11;
+  // if (a < 10) {
+  //   output = "less than 10";
+  // } else {
+  //   output = "greater than 10";
+  // }
 
-  // scenario 2: ternary operator => (condition)?true:false
-  (a < 10) ? output = "less than 10" : output = "greater than 10";
+  // // scenario 2: ternary operator => (condition)?true:false
+  // (a < 10) ? output = "less than 10" : output = "greater than 10";
+
+  /**
+ * Arithmetic operators: used to perform mathematical operations like addition (+), subtraction (-), multiplication (*), division (/), and more
+Relational operators: used to compare values and return a boolean result (==, !=, >, <, >=, <=)
+Logical operators: used to perform logical operations like AND (&&), OR (||), and NOT (!)
+Assignment operators: used to assign values to variables (=, +=, -=, *=, /=, %=)
+Ternary operator: a shorthand way of writing simple if-else statements (condition ? if_true : if_false)
+
+ * 
+ */
+
+  // Arithmetic operators: used to perform mathematical operations like addition (+), subtraction (-), multiplication (*), division (/), and more
+  // -, +,*,/~/
+
+  double a = 10;
+  double b = 20;
+
+  // var output;
+  var output;
+
+  // arithmetic operators /// return values
+  output = a * b;
+  output = a / b;
+  output = a ~/ b; // dividde but return an integer
+  output = a % b; // dividde but return an integer
+
+  //Relational operators:(==, !=, >, <, >=, <=) // return boolean output
+  output = a == b; // false
+  output = a != b; //true
+  output = a > b; // false
+  output = a < b; // true
+  output = a >= b; //false
+  output = a <= b; // true
+
+  // Logical operators: used to perform logical operations like AND (&&), OR (||), and NOT (!)
+  a = 10;
+  b = 12;
+  String name = "Learn";
+  output = (a == b && name == "Learn"); //false
+  output = (a == b || name == "Learn"); // true
+  output = !(a == b && name == "Learn"); // example NOT
+
+  // Assignment operators: (=, +=, -=, *=, /=, %=)
+  a = 10;
+  b = 12;
+  output = a += 1; // added 1 making 11
+  output = a -= 1; // reduced by 1 making 10
+  output = a *= 10; // multiply by 10 making 100
+  output = a /= 3; // divide by 5 making 20
+
+  name = "Learn";  
+  output =(name == "Learn")? "School of Learning": "Strathmore"; //ternary operator
 
   print("================================================");
   print(output);
