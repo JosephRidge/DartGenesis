@@ -99,46 +99,93 @@ Ternary operator: a shorthand way of writing simple if-else statements (conditio
   // Arithmetic operators: used to perform mathematical operations like addition (+), subtraction (-), multiplication (*), division (/), and more
   // -, +,*,/~/
 
-  double a = 10;
-  double b = 20;
+  // double a = 10;
+  // double b = 20;
 
+  // // var output;
   // var output;
-  var output;
 
-  // arithmetic operators /// return values
-  output = a * b;
-  output = a / b;
-  output = a ~/ b; // dividde but return an integer
-  output = a % b; // dividde but return an integer
+  // // arithmetic operators /// return values
+  // output = a * b;
+  // output = a / b;
+  // output = a ~/ b; // dividde but return an integer
+  // output = a % b; // dividde but return an integer
 
-  //Relational operators:(==, !=, >, <, >=, <=) // return boolean output
-  output = a == b; // false
-  output = a != b; //true
-  output = a > b; // false
-  output = a < b; // true
-  output = a >= b; //false
-  output = a <= b; // true
+  // //Relational operators:(==, !=, >, <, >=, <=) // return boolean output
+  // output = a == b; // false
+  // output = a != b; //true
+  // output = a > b; // false
+  // output = a < b; // true
+  // output = a >= b; //false
+  // output = a <= b; // true
 
-  // Logical operators: used to perform logical operations like AND (&&), OR (||), and NOT (!)
-  a = 10;
-  b = 12;
-  String name = "Learn";
-  output = (a == b && name == "Learn"); //false
-  output = (a == b || name == "Learn"); // true
-  output = !(a == b && name == "Learn"); // example NOT
+  // // Logical operators: used to perform logical operations like AND (&&), OR (||), and NOT (!)
+  // a = 10;
+  // b = 12;
+  // String name = "Learn";
+  // output = (a == b && name == "Learn"); //false
+  // output = (a == b || name == "Learn"); // true
+  // output = !(a == b && name == "Learn"); // example NOT
 
-  // Assignment operators: (=, +=, -=, *=, /=, %=)
-  a = 10;
-  b = 12;
-  output = a += 1; // added 1 making 11
-  output = a -= 1; // reduced by 1 making 10
-  output = a *= 10; // multiply by 10 making 100
-  output = a /= 3; // divide by 5 making 20
+  // // Assignment operators: (=, +=, -=, *=, /=, %=)
+  // a = 10;
+  // b = 12;
+  // output = a += 1; // added 1 making 11
+  // output = a -= 1; // reduced by 1 making 10
+  // output = a *= 10; // multiply by 10 making 100
+  // output = a /= 3; // divide by 5 making 20
 
-  name = "Learn";  
-  output =(name == "Learn")? "School of Learning": "Strathmore"; //ternary operator
+  // name = "Learn";
+  // output =(name == "Learn")? "School of Learning": "Strathmore"; //ternary operator
+
+  // For loops (you can iteracte over a range or a collection)
+
+  // for (start; start <= stop; start++) {
+  //   print(start);
+  // }
+
+  // //  dealing lists
+  // List fruits = ["mango", "banana", "apples", "pineapples", "pears"];
+
+  // // for (start; start < stop; start++) {
+  // //   print("$start ${fruits[start]}");
+  // // }
+
+  // for (var fruit in fruits) {
+  //   print(fruit);
+  // }
+
+  // fruits.forEach( (fruit)=>{ });
+
+  // // while loop, condition->run statement if the condition is true
+
+  // while (start < stop) {
+  //   print(start);
+  //   start++;
+  // }
+  // print("================================================");
+
+  // start = 0;
+  // do {
+  //   start++;
+  //   print(start);
+  // } while (start < stop);
+
+  int start = 0;
+  int stop = 10;
+  var output = "";
+  output = "www";
+  // stop our loop or skip an iteration => break(stops loop) continue(skips an iteration)
 
   print("================================================");
-  print(output);
+  while (start < stop) {
+    start++;
+    if (start == 3) continue;// skip an iteration  
+    if (start == 7) break;// stop the loop 
+    print(start); 
+  }
+
+  print("================================================");
+  // print(output);
   print("================================================");
 }
