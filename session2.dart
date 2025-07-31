@@ -179,24 +179,61 @@ Ternary operator: a shorthand way of writing simple if-else statements (conditio
   //   if (start == 7) break;// stop the loop
   //   print(start);
   // }
+  // int start = 0;
+  // int stop = 10;
+  var output = "";
+  output = "";
+
+  // // ternary operator -> simple conditionals or logic
+  // output = (start == 10) ? "ten" : "$start";
+
+  // // if else statement > complex
+  // if (start == 10) {
+  //   output = "ten";
+  // } else {
+  //   output = "$start";
+  // }
+
   int start = 0;
   int stop = 10;
-  var output = "";
-  output = "www";
 
-  // ternary operator -> simple conditionals or logic
-  output = (start == 10) ? "ten" : "$start";
+  // // run statement > check condition
+  // do {
+  //   start++;
+  //   if (start == 4) continue; // skipping when it reaches 4
+  //   if (start == 8) break; // stop when it reaches 8
+  //   print(start);
+  // } while (start <= stop);
 
-  // if else statement > complex
+  // print("=====================");
+  // start = 0;
+  // while (start <= stop) {
+  //   // print(start);
+  //   start++;
+  // }
+  // print("=====================");
+
+  // for (start; start < stop; start++) {
+  //   print(start);
+  // }
+
+  // List fruits = ["mango", "apple", "pear"];
+
+  // for (var fruit in fruits) {
+  //   print(fruit);
+  // }
+
+  // fruits.forEach(
+  //   (fruit){print(fruit);} // anonymous function
+  // );
+
+  start = 10;
+
   if (start == 10) {
-    output = "ten"; 
-  } else {
-    output = "$start";
+    print("ten");
+  }else{
+print("$start");
   }
-
-
-  
-
   print("================================================");
   print(output);
   print("================================================");
